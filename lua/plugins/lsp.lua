@@ -2,7 +2,7 @@ local desired = {
 	-- Rustaceanvim does rust_analyzer
 	"lua_ls",
 	"tinymist",
-	"nil",
+	"nil_ls",
 }
 
 local IS_NIX = vim.env["NIX_USER_PROFILE_DIR"] ~= nil
