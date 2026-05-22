@@ -3,6 +3,7 @@ local desired = {
 	"lua_ls",
 	"tinymist",
 	"nil_ls",
+	"sqls",
 }
 
 local IS_NIX = vim.env["NIX_USER_PROFILE_DIR"] ~= nil
