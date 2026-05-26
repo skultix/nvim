@@ -4,6 +4,7 @@ local desired = {
 	"tinymist",
 	"nil_ls",
 	"sqls",
+	"ty",
 }
 
 local IS_NIX = vim.env["NIX_USER_PROFILE_DIR"] ~= nil
