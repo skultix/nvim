@@ -11,15 +11,19 @@ local IS_NIX = vim.env["NIX_USER_PROFILE_DIR"] ~= nil
 local ensure_installed = IS_NIX and {} or desired
 vim.lsp.enable(desired)
 
+-- local ENABLE_MASON = not IS_NIX
+local ENABLE_MASON = false
+
 return {
 	{
 		"mason-org/mason.nvim",
-		enabled = not IS_NIX,
+		-- enabled = not IS_NIX,
+		enabled = ENABLE_MASON,
 		opts = {},
 	},
 	{
 		"mason-org/mason-lspconfig.nvim",
-		enabled = not IS_NIX,
+		enabled = ENABLE_MASON,
 		opts = {
 			ensure_installed = ensure_installed,
 			automatic_enable = false,
