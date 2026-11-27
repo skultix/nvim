@@ -5,6 +5,8 @@ local desired = {
 	"nil_ls",
 	"sqls",
 	"ty",
+	"tofu_ls",
+	"tflint",
 }
 
 local IS_NIX = vim.env["NIX_USER_PROFILE_DIR"] ~= nil
